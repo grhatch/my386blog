@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Explain Data Science Like I'm Five!
+title: Data Science For Younglings
 email: gavinrhatch@gmail.com
 description: >-
   Welcome, young ones. Truly wonderful, the mind of a child is.
