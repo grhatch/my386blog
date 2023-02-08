@@ -68,13 +68,9 @@ If coding in the terminal:
 Save the file and run the "git add" command to stage the file. Then, run the "git commit" command to commit the resolved conflict. It's important to use a descriptive commit message that explains the resolution. Finally, run the "git merge" command again to complete the merge. You should now see a message indicating that the merge was successful.
 
 If coding in the editor:
-Simply click on "Commit" followed by "Sync".
+MAKE SURE that in the terminal, you run "git add." followed by "git commit -m "message" before syncing. If you do not do this, git may think you are still trying to resolve conflicts.
 
-(I like doing all of this directly in the editor for simplicity!)
-
-<img src="" alt="" style="display: block;
-  margin-left: auto;
-  margin-right: auto; width:400px;"/>
+Once "Sync" is pressed, your code will push up to the repository.
 
 # Conclusion
 
