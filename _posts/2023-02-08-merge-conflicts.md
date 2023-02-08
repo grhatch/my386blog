@@ -12,7 +12,7 @@ Nothing is more time-consuming and frustrating than pushing up your code in Visu
 
 <img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_conflict.png?raw=true" alt="merge_conflict" style="display: block;
   margin-left: auto;
-  margin-right: auto; width:400px;"/>
+  margin-right: auto; width:800px;"/>
 
 Git is great to use when collaborating on projects, however, conflicts can arise when two or more developers modify the same file simultaneously. In such cases, Git cannot automatically merge the changes and requires a human decision. This is known as a merge conflict. In this blog post, we'll take a look at how to resolve merge conflicts in Git.
 
@@ -36,13 +36,13 @@ Once in the editor, click on the file under "Merge Changes" in the Source Contro
 
 <img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_changes_file.png?raw=true" alt="merge_changes_file" style="display: block;
   margin-left: auto;
-  margin-right: auto; width:400px;"/>
+  margin-right: auto; width:600px;"/>
 
 You will see the contents of the file with the conflicts marked with special symbols and often highlighted in different colors.
 
 <img src="https://github.com/grhatch/my386blog/blob/main/assets/images/conflicted_file.png?raw=true" alt="conflicted_file" style="display: block;
   margin-left: auto;
-  margin-right: auto; width:400px;"/>
+  margin-right: auto; width:600px;"/>
 
 In this example, the changes from the current branch (HEAD) are marked with "<<<<<<< HEAD," and the changes from GitHub are marked with ">>>>>>> 0914866b7fd4f94294331d4d8f957bc81123c99c."
 
@@ -58,7 +58,7 @@ I like to click on "Compare Changes" to see both files side by side to clearly c
 
 <img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_editor.png?raw=true" alt="merge_editor" style="display: block;
   margin-left: auto;
-  margin-right: auto; width:400px;"/>
+  margin-right: auto; width:600px;"/>
 
 If desired, you can click on one of the options above the conflicts like "Accept Incoming" or "Accept Current". Just make sure to proof read the code before committing and pushing.
 
