@@ -3,7 +3,7 @@ layout: post
 title: 'Resolving Merge Conflicts in Git'
 author: Gavin Hatch
 description: Step-by-step guide to resolving annoying merge conflicts.
-image: /assets/images/sunrise.jpg
+image: /assets/images/lightspeed.jpg
 ---
 
 # Resolving Git Merge Conflicts - Step-by-Step
