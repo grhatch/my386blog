@@ -14,6 +14,8 @@ Nothing is more time-consuming and frustrating than pushing up your code in Visu
   margin-left: auto;
   margin-right: auto; width:400px;"/>
 
+![merge_conflict](.assets/images/merge_conflict.jpgscreenshot.jpg)
+
 Git is great to use when collaborating on projects, however, conflicts can arise when two or more developers modify the same file simultaneously. In such cases, Git cannot automatically merge the changes and requires a human decision. This is known as a merge conflict. In this blog post, we'll take a look at how to resolve merge conflicts in Git.
 
 # Step 1: Identify the Conflict
