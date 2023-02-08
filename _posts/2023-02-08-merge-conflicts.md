@@ -10,11 +10,9 @@ image: /assets/images/sunrise.jpg
 
 Nothing is more time-consuming and frustrating than pushing up your code in Visual Studio just to see this:
 
-<img src="./assets/images/merge_conflict.jpg" alt="" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_conflict.png?raw=true" alt="merge_conflict" style="display: block;
   margin-left: auto;
   margin-right: auto; width:400px;"/>
-
-![merge_conflict](.assets/images/merge_conflict.jpgscreenshot.jpg)
 
 Git is great to use when collaborating on projects, however, conflicts can arise when two or more developers modify the same file simultaneously. In such cases, Git cannot automatically merge the changes and requires a human decision. This is known as a merge conflict. In this blog post, we'll take a look at how to resolve merge conflicts in Git.
 
@@ -26,7 +24,7 @@ Often, when pushing up code directly through an editor like Visual Studio, the g
 
 If coding in the terminal, you can check for a conflict by using the "git status" command. If you see a message like "both modified: file.py," this means that there is a conflict in the file "file.py."
 
-<img src="" alt="" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/conflict_git_log.png?raw=true" alt="conflict_git_log" style="display: block;
   margin-left: auto;
   margin-right: auto; width:400px;"/>
 
@@ -36,13 +34,13 @@ If coding in the terminal, an editor should automatically open based on the defa
 
 Once in the editor, click on the file under "Merge Changes" in the Source Control tab.
 
-<img src="" alt="" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_changes_file.png?raw=true" alt="merge_changes_file" style="display: block;
   margin-left: auto;
   margin-right: auto; width:400px;"/>
 
 You will see the contents of the file with the conflicts marked with special symbols and often highlighted in different colors.
 
-<img src="" alt="" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/conflicted_file.png?raw=true" alt="conflicted_file" style="display: block;
   margin-left: auto;
   margin-right: auto; width:400px;"/>
 
@@ -58,7 +56,7 @@ You can make edits to the code right here in the file.
 
 I like to click on "Compare Changes" to see both files side by side to clearly compare them before I make any changes.
 
-<img src="" alt="" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_editor.png?raw=true" alt="merge_editor" style="display: block;
   margin-left: auto;
   margin-right: auto; width:400px;"/>
 
