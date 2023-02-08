@@ -74,4 +74,4 @@ Once "Sync" is pressed, your code will push up to the repository.
 
 # Conclusion
 
-Resolving merge conflicts in Git can seem intimidating at first, but with a little practice, it becomes a straightforward process. By following the steps outlined in this blog post, you'll be able to resolve conflicts with confidence and continue to collaborate with your team on your projects!
+Resolving merge conflicts in Git can seem intimidating at first, but with a little practice, it becomes a straightforward process. By following the steps outlined in this blog post, you'll be able to resolve conflicts with confidence and continue to collaborate with your team on your projects. Now get out there and resolve some conflicts!
