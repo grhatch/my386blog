@@ -3,14 +3,14 @@ layout: post
 title: 'Resolving Merge Conflicts in Git'
 author: Gavin Hatch
 description: Step-by-step guide to resolving annoying merge conflicts.
-image: /assets/images/lightspeed.jpg
+image: /assets/images/lightspeed.avif
 ---
 
 # Resolving Git Merge Conflicts - Step-by-Step
 
 Nothing is more time-consuming and frustrating than pushing up your code in Visual Studio just to see this:
 
-<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_conflict.avif?raw=true" alt="merge_conflict" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_conflict.jpg?raw=true" alt="merge_conflict" style="display: block;
   margin-left: auto;
   margin-right: auto; width:800px;"/>
 
