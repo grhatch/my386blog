@@ -10,7 +10,7 @@ image: /assets/images/lightspeed.avif
 
 Nothing is more time-consuming and frustrating than pushing up your code in Visual Studio just to see this:
 
-<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_conflict.jpg?raw=true" alt="merge_conflict" style="display: block;
+<img src="https://github.com/grhatch/my386blog/blob/main/assets/images/merge_conflict.png?raw=true" alt="merge_conflict" style="display: block;
   margin-left: auto;
   margin-right: auto; width:800px;"/>
 
