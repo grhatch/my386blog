@@ -24,4 +24,4 @@ Although I did not experience any large flaws in this book, I do think it could 
 
 Overall, The Ethical Algorithm is a well-written and thought-provoking book that will appeal to a broad audience. Anyone interested in the social impact of technology and the need for ethical decision-making in the digital age will find it a valuable read. The authors provide a compelling case for why ethical algorithm design is critical, and their insights will help guide future efforts to create socially responsible algorithms.
 
-Rating: :star:
+Rating: ⭐⭐⭐⭐⭐
