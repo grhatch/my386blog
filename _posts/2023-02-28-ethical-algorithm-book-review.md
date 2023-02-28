@@ -11,7 +11,7 @@ image: /assets/images/comics.avif
 <img 
     src="https://github.com/grhatch/my386blog/blob/main/assets/images/book_cover.png?raw=true" alt="merge_conflict" style="display: block;
             margin-left: auto;
-            margin-right: auto; width:800px;"
+            margin-right: auto; width:200px;"
 />
 
 The Ethical Algorithm: The Science of Socially Aware Algorithm Design by Aaron Roth and Michael Kearns is a thought-provoking book that delves into the growing concern of ethical algorithm design. The authors provide insight into how algorithms can affect society and highlight the importance of designing algorithms that consider the ethical implications.
