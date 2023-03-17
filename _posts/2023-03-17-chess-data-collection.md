@@ -20,6 +20,8 @@ I have spent quite some time playing and learning about chess in the past few mo
 
 Every game of chess on chess.com is well documented. It has everything from the players' moves to the type of game played (e.g. blitz, rapid, daily). Gratefully, chess.com has a committed community that put together a public API with the ability to access all of this data.
 
+# Ethics
+
 As no API key is required, all the information is publicly available, and nobody's private data is up for grabs, no ethical problems were had in gathering this data.
 
 The [API's documentation](https://www.chess.com/news/view/published-data-api) comments on the subject:
@@ -27,10 +29,6 @@ The [API's documentation](https://www.chess.com/news/view/published-data-api) co
 "Our goal is to re-package all currently public data from the website and make it available via the PubAPI. "Public Data" is information available to people who are not logged in, such as player data, game data, and club/tournament information. This excludes private information that is restricted to the logged in user, such as game chat and conditional moves."
 
 Using this public API, I collected a list of users and their games to look for trends in win rates vs color played. Additionally, I was curious to see if diffently titled players (i.e. Grand Master, International Master, etc.) have different outcomes based on the color they played.
-
-With thousands of records of players and even more games, the potential of the data is immense. Here's to improving at one of the oldest and most popular games in the world. Stay tuned to find out how the color you play will affect your game!
-
-Check out my repository by clicking [here](https://github.com/grhatch/chess-grhatch)!
 
 # How to get the Data
 
@@ -47,8 +45,12 @@ Then for each user in each title, I got their games using their archives.
 
 ## Code
 
+(See comments for explanations)
+
+This code block gets a list of usernames that we can use for the other endpoints.
+
 ```python
-#get a list of players from each title category
+#get a list of users from each title category
 def TitledPlayers(title):
     url = f"https://api.chess.com/pub/titled/{title}"
     response = requests.request("GET", url)
@@ -67,6 +69,12 @@ cmSmall = random.sample(cm['players'], 50)
 #combine all names
 titles = [gmSmall, imSmall, fmSmall, cmSmall]
 
+```
+
+This is the main code block that gets data for the games of each user.
+One thing to note is that this block of code can take an tremendous amount of time to load because a very active player might have several different months with several games resulting in a lot of requests being sent. You can either pull everything and wait for a long time, or you can modify the amount of players/amount of months to query.
+
+```python
 data = []
 userTitle = ''
 for title in titles: #loops through each of the titles (gm, im, fm, cm)
@@ -122,3 +130,9 @@ for title in titles: #loops through each of the titles (gm, im, fm, cm)
         data.append([user, userTitle, numGames, winRate, numWhite, whiteRate, numBlack, blackRate])
 
 ```
+
+# Conclusion
+
+With thousands of records of players and even more games, the potential of the data is immense. Here's to improving at one of the oldest and most popular games in the world. Stay tuned to find out how the color you play will affect your game!
+
+Check out my repository by clicking [here](https://github.com/grhatch/chess-grhatch)!
