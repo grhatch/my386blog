@@ -47,7 +47,7 @@ Then for each user in each title, I got their games using their archives.
 
 ## Code
 
-```{python}
+```python
 def TitledPlayers(title):
     url = f"https://api.chess.com/pub/titled/{title}"
     payload = {}
