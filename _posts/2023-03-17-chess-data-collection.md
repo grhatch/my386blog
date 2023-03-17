@@ -31,3 +31,72 @@ Using this public API, I collected a list of users and their games to look for t
 With thousands of records of players and even more games, the potential of the data is immense. Here's to improving at one of the oldest and most popular games in the world. Stay tuned to find out how the color you play will affect your game!
 
 Check out my repository by clicking [here](https://github.com/grhatch/chess-grhatch)!
+
+# How to get the Data
+
+## Endpoints
+
+Here is a list of the endpoints that I used:
+
+- https://api.chess.com/pub/titled/{title}
+- https://api.chess.com/pub/player/{username}/games/archives
+- https://api.chess.com/pub/player/{username}/games/{YYYY}/{MM}
+
+For "title", I used "GM", "IM", "FM", and "CM".
+Then for each user in each title, I got their games using their archives.
+
+## Code
+
+```{python}
+data = []
+userTitle = ''
+for title in titles: #loops through each of the titles (gm, im, fm, cm)
+    users = title
+    # in the following code block, define which title each player has based on which part of the loop it is in
+    if title == titles[0]:
+        userTitle = 'gm'
+    elif title == titles[1]:
+        userTitle = 'im'
+    elif title == titles[2]:
+        userTitle = 'fm'
+    elif title == titles[3]:
+        userTitle = 'cm'
+    for user in users: #loops through each user in the category
+        #hitting chess.com API to get each month that a player has games
+        url = f'https://api.chess.com/pub/player/{user}/games/archives'
+        response = requests.request("GET", url)
+        archives = response.json()
+
+        monthurls = archives['archives']
+
+        gameslist = []
+        for url in monthurls: #loop through each month
+            response = requests.request("GET", url)
+            gameslist.append(response.json())
+        white = []
+        black = []
+        for gamelist in gameslist: #loop through each list of games
+            games = gamelist['games']
+            for game in games: #within each list of games, get each game
+                if game['white']['username'] == user:
+                    if game['white']['result'] == 'win':
+                        white.append(1)
+                    else:
+                        white.append(0)
+                else:
+                    if game['black']['result'] == 'win':
+                        black.append(1)
+                    else:
+                        black.append(0)
+
+        totalGames = white + black
+        numGames = len(totalGames)
+        winRate = np.mean(totalGames)
+        numWhite = len(white)
+        whiteRate = np.mean(white)
+        numBlack = len(black)
+        blackRate = np.mean(black)
+
+        data.append([user, userTitle, numGames, winRate, numWhite, whiteRate, numBlack, blackRate])
+
+```
