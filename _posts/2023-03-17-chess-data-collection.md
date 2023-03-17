@@ -11,7 +11,7 @@ image: /assets/images/black-and-white-chess.avif
 <img 
     src="https://github.com/grhatch/my386blog/blob/main/assets/images/knights.avif?raw=true" alt="knights" style="display: block;
             margin-left: auto;
-            margin-right: auto; width:200px;"
+            margin-right: auto; width:400px;"
 />
 
 White moves first. This rule is well known by almost everyone - even if they don't know how to play. Is this an advantage? Does the first move have an effect on the outcome of the game? Or does black's response to white's opening take control of the match's direction?
@@ -30,4 +30,4 @@ Using this public API, I collected a list of users and their games to look for t
 
 With thousands of records of players and even more games, the potential of the data is immense. Here's to improving at one of the oldest and most popular games in the world. Stay tuned to find out how the color you play will affect your game!
 
-Check out my repository by clicking [here](https://github.com/grhatch/chess-grhatch)
+Check out my repository by clicking [here](https://github.com/grhatch/chess-grhatch)!
