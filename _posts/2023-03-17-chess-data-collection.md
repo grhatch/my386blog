@@ -130,9 +130,17 @@ for title in titles: #loops through each of the titles (gm, im, fm, cm)
 
 ```
 
+Filtered data frame of the above code:
+
+<img 
+    src="https://github.com/grhatch/my386blog/blob/main/assets/images/chess_dataframe.png?raw=true" alt="dataframe" style="display: block;
+            margin-left: auto;
+            margin-right: auto; width:400px;"
+/>
+
 ### Note
 
-This block of code can take an tremendous amount of time to load because a very active player might have several different months with several games resulting in a lot of requests being sent. You can either pull everything and wait for a long time, or you can modify the amount of players/amount of months to query.
+This code can take an tremendous amount of time to load because a very active player might have several different months with several games resulting in a lot of requests being sent. You can either pull everything and wait for a long time, or you can modify the amount of players/amount of months to query.
 
 # Conclusion
 
