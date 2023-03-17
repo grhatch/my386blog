@@ -16,7 +16,7 @@ image: /assets/images/black-and-white-chess.avif
 
 White moves first. This rule is well known by almost everyone - even if they don't know how to play. Is this an advantage? Does the first move have an effect on the outcome of the game? Or does black's response to white's opening take control of the match's direction?
 
-I have spent quite some time playing and learning about chess in the past few months, and this question has come up often as I look at stats of top players and explore new openings. To find out, I went to chess.com to look for an API.
+I have spent quite some time playing and learning about chess in the past few months, and this question has come up often as I look at stats of top players and explore new openings. To find out, I went to [chess.com](https://www.chess.com) to look for an API.
 
 Every game of chess on chess.com is well documented. It has everything from the players' moves to the type of game played (e.g. blitz, rapid, daily). Gratefully, chess.com has a committed community that put together a public API with the ability to access all of this data.
 
