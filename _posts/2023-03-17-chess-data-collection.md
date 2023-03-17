@@ -47,7 +47,7 @@ Then for each user in each title, I got their games using their archives.
 
 (See comments for explanations)
 
-This code block gets a list of usernames that we can use for the other endpoints.
+Get a list of usernames that we can use for the other endpoints:
 
 ```python
 #get a list of users from each title category
@@ -71,8 +71,7 @@ titles = [gmSmall, imSmall, fmSmall, cmSmall]
 
 ```
 
-This is the main code block that gets data for the games of each user.
-One thing to note is that this block of code can take an tremendous amount of time to load because a very active player might have several different months with several games resulting in a lot of requests being sent. You can either pull everything and wait for a long time, or you can modify the amount of players/amount of months to query.
+Get data for the games of each user:
 
 ```python
 data = []
@@ -130,6 +129,10 @@ for title in titles: #loops through each of the titles (gm, im, fm, cm)
         data.append([user, userTitle, numGames, winRate, numWhite, whiteRate, numBlack, blackRate])
 
 ```
+
+### Note
+
+This block of code can take an tremendous amount of time to load because a very active player might have several different months with several games resulting in a lot of requests being sent. You can either pull everything and wait for a long time, or you can modify the amount of players/amount of months to query.
 
 # Conclusion
 
