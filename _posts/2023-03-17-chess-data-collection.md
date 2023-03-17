@@ -59,11 +59,13 @@ im = TitledPlayers('IM') #International Master
 fm = TitledPlayers('FM') #FIDE Master
 cm = TitledPlayers('CM') #Candidate Master
 
-gmSmall = random.sample(gm['players'], 2)
-imSmall = random.sample(im['players'], 2)
-fmSmall = random.sample(fm['players'], 2)
-cmSmall = random.sample(cm['players'], 2)
+#get a smaller set of data to decrease load time (but keep 200 rows)
+gmSmall = random.sample(gm['players'], 50)
+imSmall = random.sample(im['players'], 50)
+fmSmall = random.sample(fm['players'], 50)
+cmSmall = random.sample(cm['players'], 50)
 
+#combine all names
 titles = [gmSmall, imSmall, fmSmall, cmSmall]
 
 data = []
@@ -85,17 +87,19 @@ for title in titles: #loops through each of the titles (gm, im, fm, cm)
         response = requests.request("GET", url)
         archives = response.json()
 
-        monthurls = archives['archives']
+        #take just the first month returned so that there isn't an astronomical amount of data
+        monthurls = archives['archives'][:1]
 
         gameslist = []
         for url in monthurls: #loop through each month
             response = requests.request("GET", url)
-            gameslist.append(response.json())
+            gameslist.append(response.json()) #create a list of games for each player
         white = []
         black = []
         for gamelist in gameslist: #loop through each list of games
             games = gamelist['games']
             for game in games: #within each list of games, get each game
+                #get wins as white and wins as black
                 if game['white']['username'] == user:
                     if game['white']['result'] == 'win':
                         white.append(1)
@@ -115,6 +119,7 @@ for title in titles: #loops through each of the titles (gm, im, fm, cm)
         numBlack = len(black)
         blackRate = np.mean(black)
 
+        #create final data object from which we will create a data frame and do some analysis
         data.append([user, userTitle, numGames, winRate, numWhite, whiteRate, numBlack, blackRate])
 
 ```
