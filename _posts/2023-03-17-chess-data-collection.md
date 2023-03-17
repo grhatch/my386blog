@@ -135,7 +135,7 @@ Filtered data frame of the above code:
 <img 
     src="https://github.com/grhatch/my386blog/blob/main/assets/images/chess_dataframe.png?raw=true" alt="dataframe" style="display: block;
             margin-left: auto;
-            margin-right: auto; width:400px;"
+            margin-right: auto; width:600px;"
 />
 
 ### Note
