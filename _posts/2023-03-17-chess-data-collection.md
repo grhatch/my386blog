@@ -48,11 +48,10 @@ Then for each user in each title, I got their games using their archives.
 ## Code
 
 ```python
+#get a list of players from each title category
 def TitledPlayers(title):
     url = f"https://api.chess.com/pub/titled/{title}"
-    payload = {}
-    response = requests.request("GET", url, data = payload)
-    status_code = response.status_code
+    response = requests.request("GET", url)
     return response.json()
 gm = TitledPlayers('GM') #Grand Master
 im = TitledPlayers('IM') #International Master
