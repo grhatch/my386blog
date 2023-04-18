@@ -9,7 +9,7 @@ image: /assets/images/checkmate.avif
 # Final Analysis
 
 <img 
-    src="https://github.com/grhatch/my386blog/blob/main/assets/images/whitewins.avif?raw=true" alt="whitewins" style="display: block;
+    src="https://github.com/grhatch/my386blog/blob/main/assets/images/handshake.avif?raw=true" alt="handshake" style="display: block;
             margin-left: auto;
             margin-right: auto; width:400px;"
 />
