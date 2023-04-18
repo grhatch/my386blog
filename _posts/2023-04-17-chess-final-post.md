@@ -2,7 +2,7 @@
 layout: post
 title: 'Checkmate - Final Chess Data Analysis'
 author: Gavin Hatch
-description: Results of my analysis of all the chess data!
+description: Results of my analysis of all the chess data! Does color give an advantage? Is cheating rampant on chess.com? Read to find out!
 image: /assets/images/checkmate.avif
 ---
 
